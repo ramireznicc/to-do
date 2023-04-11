@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --white: #eee;
+  --lila: #bc86f3;
+  --grey-dark: #282828;
+  --grey-light: #808080;
+  --green: #a5dbb3;
+}
+
+body{
+  background: linear-gradient(to bottom, var(--grey-dark), var(--grey-light), var(--white));
+  height: 100vh;
+}
+
+.container{
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+/* USER */
+
+.user h1{
+  color: var(--white);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.user span{
+  color: var(--lila);
+  letter-spacing: .5px;
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+#date{
+  padding: 35px 0 10px;
+  color: var(--green);
+  text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ADD-TASK */
+
+.add-task{
+  background-color: var(--white);
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.add-task input {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 0 10px;
+  border: none;
+  background-color: var(--white);
+  font-size: 14px;
+  color: var(--lila);
+}
+
+.add-task i {
+  font-size: 25px;
+  color: var(--lila);
+  transition: 0.5s 0.2s;
+}
+
+.add-task input::placeholder{
+  font-family: monospace;
+  color: var(--grey-light);
+  text-align: center;
+}
+
+.add-task i:hover{
+  transform: scale(1.1);
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* LIST */
+
+.list h3{
+  color: var(--white);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.list li{
+  display: flex;
+  background-color: var(--grey-dark);
+  border-radius: 25px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.list i{
+  font-size: 20px;
+  color: var(--green);
+  transition: 0.5s 0.2s;
+}
+
+.list i:hover{
+  color: var(--lila);
+  cursor: pointer;
+}
+
+.list > ul p{
+  color: var(--white);
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.5s 0.2s;
+}
+
+.list > ul p:hover{
+  color: var(--lila);
+}
+
+.line-through{
+  text-decoration: line-through;
+}
